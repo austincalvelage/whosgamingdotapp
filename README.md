@@ -1,34 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# WhosGamingApp
 
-## Getting Started
+WhosGaming is an application designed to replace that group chat we know that everyone of you have that consists of that nightly banter of "Anyone getting on tonight". With WhosGaming the teamleader of your group will setup and account with us. Then input all your fellow gamers phone numbers and set the time you want your daily text to be sent out asking who is playing as well as setting the time to send out the second text confirming how many gamers will be online.
 
-First, run the development server:
+**Link to project:** [link]
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![alt tag](img link)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How It's Made:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+**Tech used:** NextJS, Tailwind, TypeScript, Express, SupaBase, Twillio, Node-Schedule
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+WhosGamingApp was built with NextJS, Tailwind and TypeScript on the Front-end. On the Backend Express, SupaBase for both authentication and as a database, Twillio for SMS sending capability, Node-Schedule for scheduling SMS tasks.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Optimizations
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Lessons Learned:
