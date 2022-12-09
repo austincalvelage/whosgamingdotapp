@@ -6,16 +6,12 @@ import { CgBatteryFull, CgBattery } from 'react-icons/cg'
 
 import Message from './Message'
 import Clock from './Clock'
+import ContactSvg from './ContactSvg'
 
 const PhoneDemo: NextPage = () => {
   return (
     <div className='relative flex min-h-[525px] min-w-[280px] max-w-[280px] flex-col rounded-[40px] bg-white shadow-[0px_0px_0px_5px_#1f1f1f,0px_0px_0px_7px_#191919,0px_0px_0px_14px_#111]'>
-      <Clock
-        text='12:00PM'
-        transition={{ delay: 5, type: 'spring', stiffness: 20 }}
-        initial={{ opacity: 1 }}
-        animate={{ opacity: 0 }}
-      />
+      <Clock text='12:00PM' transition={{ delay: 5 }} initial={{ opacity: 1 }} animate={{ opacity: 0 }} />
       <Clock text='6:00PM' transition={{ delay: 5 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }} />
       <MdSignalCellularAlt className='absolute right-[4.5rem] top-2 z-50 text-sm' />
       <MdWifi className='absolute right-12 top-2 z-50 text-sm' />
@@ -28,7 +24,9 @@ const PhoneDemo: NextPage = () => {
           </div>
         </div>
         <div className='mt-3 mb-1 flex flex-col items-center justify-center space-y-1'>
-          <div className='bg-logo h-9 w-9 rounded-full bg-black bg-auto bg-center bg-no-repeat'></div>
+          <div className='h-9 w-9 overflow-hidden rounded-full bg-black'>
+            <ContactSvg />
+          </div>
           <p className='text-[10px] text-black'>WhosGaming</p>
         </div>
       </div>
