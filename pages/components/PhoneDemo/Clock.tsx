@@ -1,22 +1,23 @@
 import type { NextPage } from 'next'
 import { motion } from 'framer-motion'
+import cn from 'classnames'
+import { useEffect } from 'react'
 
 interface Props {
-  text: string
+  time: string
   animate?: object
   transition?: object
   initial?: object
 }
-
-const Clock: NextPage<Props> = ({ text, animate, transition, initial }) => {
+const Clock: NextPage<Props> = ({ time, animate, transition, initial }) => {
   return (
     <motion.div
       initial={initial}
-      className='absolute left-8 top-2 z-50 text-xs'
+      className='relative flex items-center justify-center text-xs'
       animate={animate}
       transition={transition}
     >
-      <div>{text}</div>
+      <div className='absolute z-20'>{time}</div>
     </motion.div>
   )
 }
