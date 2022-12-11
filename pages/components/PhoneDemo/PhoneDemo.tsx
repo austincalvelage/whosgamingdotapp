@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import HomeBar from './HomeBar'
-import Message from './Message'
 import MessageApp from './MessageApp'
 import MessageSendField from './MessageSendField'
 import StatusBar from './StatusBar'
