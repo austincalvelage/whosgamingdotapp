@@ -1,6 +1,4 @@
-import { NextComponentType } from 'next'
-
-const ContactSvg: NextComponentType = () => {
+export default function ContactSVG(): JSX.Element {
   return (
     <svg viewBox='0 0 55 47' xmlns='http://www.w3.org/2000/svg'>
       <path
@@ -14,5 +12,3 @@ const ContactSvg: NextComponentType = () => {
     </svg>
   )
 }
-
-export default ContactSvg
