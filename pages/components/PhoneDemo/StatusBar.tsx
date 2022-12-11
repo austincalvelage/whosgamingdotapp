@@ -1,8 +1,8 @@
 import { CgBatteryFull } from 'react-icons/cg'
 import { MdSignalCellularAlt, MdWifi } from 'react-icons/md'
 import Clock from './Clock'
-import ContactSVG from './ContactSVG'
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
+import ContactSVG from './ContactSVG'
 
 const StatusBar = () => {
   return (
