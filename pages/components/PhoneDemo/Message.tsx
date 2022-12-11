@@ -11,7 +11,7 @@ interface Props {
   initial?: object
 }
 
-const Message: NextPage<Props> = ({ time, text, response, animate, transition, initial }) => {
+export default function Message({ time, text, response, animate, transition, initial }: Props): JSX.Element {
   return (
     <motion.div initial={initial} className='flex flex-col space-y-2' animate={animate} transition={transition}>
       <span className='self-center text-xs text-[#8A8A8D]'>{time}</span>
@@ -26,5 +26,3 @@ const Message: NextPage<Props> = ({ time, text, response, animate, transition, i
     </motion.div>
   )
 }
-
-export default Message

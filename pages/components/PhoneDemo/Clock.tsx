@@ -1,7 +1,4 @@
-import type { NextPage } from 'next'
 import { motion } from 'framer-motion'
-import cn from 'classnames'
-import { useEffect } from 'react'
 
 interface Props {
   time: string
@@ -9,7 +6,8 @@ interface Props {
   transition?: object
   initial?: object
 }
-const Clock: NextPage<Props> = ({ time, animate, transition, initial }) => {
+
+export default function Clock({ time, animate, transition, initial }: Props): JSX.Element {
   return (
     <motion.div
       initial={initial}
@@ -21,5 +19,3 @@ const Clock: NextPage<Props> = ({ time, animate, transition, initial }) => {
     </motion.div>
   )
 }
-
-export default Clock

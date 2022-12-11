@@ -1,6 +1,6 @@
 import Message from './Message'
 
-const MessageApp = () => {
+export default function MessageApp(): JSX.Element {
   return (
     <div className='mb-auto space-y-3 p-4'>
       <Message
@@ -29,5 +29,3 @@ const MessageApp = () => {
     </div>
   )
 }
-
-export default MessageApp

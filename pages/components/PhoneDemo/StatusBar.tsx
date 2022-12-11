@@ -4,7 +4,7 @@ import Clock from './Clock'
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 import ContactSVG from './ContactSVG'
 
-const StatusBar = () => {
+export default function StatusBar(): JSX.Element {
   return (
     <div className='rounded-t-[36px] border-b border-[#E9E9EB] bg-[#ECECED]'>
       <div className='flex justify-between pt-1'>
@@ -39,5 +39,3 @@ const StatusBar = () => {
     </div>
   )
 }
-
-export default StatusBar

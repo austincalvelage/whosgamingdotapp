@@ -1,7 +1,7 @@
 import { FaArrowCircleUp } from 'react-icons/fa'
 import { IoIosCamera, IoIosAppstore } from 'react-icons/io'
 
-const MessageSendField = () => {
+export default function MessageSendField(): JSX.Element {
   return (
     <div className='flex items-center justify-between gap-2 p-2 px-4 pb-3'>
       <IoIosCamera className='h-7 w-7 text-[#999]' />
@@ -15,5 +15,3 @@ const MessageSendField = () => {
     </div>
   )
 }
-
-export default MessageSendField
