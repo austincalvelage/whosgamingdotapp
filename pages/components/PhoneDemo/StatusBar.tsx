@@ -2,7 +2,7 @@ import { CgBatteryFull } from 'react-icons/cg'
 import { MdSignalCellularAlt, MdWifi } from 'react-icons/md'
 import Clock from './Clock'
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs'
-// import ContactSVG from './ContactSVG'
+import ContactSVG from './ContactSVG'
 
 const StatusBar = () => {
   return (
@@ -27,7 +27,9 @@ const StatusBar = () => {
       <div className='grid grid-cols-3'>
         <BsChevronLeft className='col-span-1 col-start-1 mt-3 ml-2 text-2xl text-blue-600' />
         <div className='col-span-1 col-start-2 mt-1 mb-1 flex flex-col items-center justify-center space-y-1'>
-          <div className='h-9 w-9 overflow-hidden rounded-full bg-black'>{/* <ContactSVG /> */}</div>
+          <div className='h-9 w-9 overflow-hidden rounded-full bg-black'>
+            <ContactSVG />
+          </div>
           <div>
             <span className='text-[10px] text-black'>WhosGaming</span>
             <BsChevronRight className='mt-1 inline text-[8px] text-slate-700' />
