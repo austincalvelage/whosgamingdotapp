@@ -1,6 +1,7 @@
+import { NextPage } from 'next'
 import PhoneDemo from './components/PhoneDemo/PhoneDemo'
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <>
       <div className='flex h-screen items-center justify-center'>
@@ -9,3 +10,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home
